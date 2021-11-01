@@ -1,0 +1,148 @@
+/*Template Name: launching-soon
+File Name: style.css
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license/*/
+
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 20px 0;
+    color: #fff;
+    font-size:100%;
+    letter-spacing: 1px; 
+    font-weight: 300;
+}
+.content{
+    background: url(../images/banner.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center; 
+}
+textarea:focus, input:focus, select:focus, select:active{
+    outline: none;
+    box-shadow:none;
+}
+.form-control:focus {
+    box-shadow: none;
+    outline: 0 none;
+}
+a{
+    text-decoration: none;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus {outline: none;}
+a,h1,h2,h3,h4,h5{cursor: pointer;}
+a:focus, a:hover{text-decoration: none;}
+a:focus {outline: none; outline-offset: 0;}
+ul{list-style: none;}
+.main {
+    left:50%;
+    top:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+h1{
+    color: #396;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 40px 0px 20px;
+}
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0 80px;
+}
+#clockdiv > div {
+    background: #a22186 none repeat scroll 0 0;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px;
+}
+#clockdiv div > span {
+    background: #c240b7 none repeat scroll 0 0;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 15px;
+}
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+.social-icon > img{
+    margin-right: 6px;
+}
+.social-icon > img:last-child{
+    margin-right: 0;
+}
+.copyright-box {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -10%);
+}
+.copyright {
+    color: #fff;
+    font-size: 16px;
+}
+.copyright a, .copyright a:hover{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+@media (max-width: 991px){
+    .main {
+        left: auto;
+        position: absolute;
+        top: 10%;
+        transform: translate(0%, 0%);
+        width: 100%;
+    }
+}
+@media (max-width: 767px){
+    .title{
+        font-size: 20px;
+    }
+    #clockdiv div > span{
+        font-size: 22px;
+    }
+    #clockdiv {
+        margin: 15px 0 40px;
+    }
+    .social-icon > img{
+        width:10%;
+    }
+}
+@media (max-width: 400px){
+    .title{
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    #clockdiv div > span{
+        font-size:14px;
+        padding:9px;
+    }
+    .smalltext{
+        font-size: 9px;
+    }
+    #clockdiv > div{
+        padding: 6px;
+    }
+    .social-icon > img {
+        width: 10%;
+    }
+}

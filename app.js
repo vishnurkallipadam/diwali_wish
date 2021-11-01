@@ -61,7 +61,7 @@ app.post('/mail',function(req,res){
                 from: 'creationzv@gmail.com',
                 to: email,
                 subject: 'Diwali surprise from ' + name,
-                text: 'you have a surprise gift from ' + name +' please click on link https://wishfordiwali.herokuapp.com/'+response._id,
+                text: 'you have a surprise gift from ' + name +' please click on link https://wishfordiwali.herokuapp.com/home/'+response._id,
             };
             console.log(mailDetails);
             mailTransporter.sendMail(mailDetails, function(err, data) {

@@ -13,12 +13,7 @@ app.set('views','./src/views');
 
 
 
-app.get('/',function(req,res){
-    res.render("index",
-    {
-        title: 'Happy Diwali'
-    });
-});
+
 app.get('/home/:id',function(req,res){
 
    
@@ -65,24 +60,19 @@ app.post('/mail',function(req,res){
             };
             console.log(mailDetails);
             mailTransporter.sendMail(mailDetails, function(err, data) {
-                
+                console.log(response.rname+"rname");
+                console.log(rname);
                 if(err) {
                     console.log(err);
                     res.json({success: false});
                     console.log('Error Occurs! Bad Request');
                 } else {
-                    res.json({success: true});
+                    res.json({success: true,name:rname});
                     console.log('Email sent successfully');
                 }
             });
-
-
         })
-    
     });
-
-
-
 app.listen(port,()=>{console.log("Server Ready at" + port)});
 
  

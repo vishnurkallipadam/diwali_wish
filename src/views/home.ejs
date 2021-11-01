@@ -224,11 +224,11 @@
     success:(response)=>{
       console.log(response);
       if(response.success){
-            alert("Mail Sent Successfully!");
+            alert("Mail Sent Successfully to "+response.name);
             location.reload();
         }else{
           alert("Failed to Sent Mail");
-          window.location.href='/home';
+          location.reload();
         }
     },
     error:(response)=>{
